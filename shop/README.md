@@ -1,3 +1,8 @@
+# For listing products
+
+* Go to the db folder with the "cd db" command.
+* Then run the code "json-server --watch shop.json" here
+
 # Shop
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
