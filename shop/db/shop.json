@@ -1,0 +1,118 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 2500,
+      "categoryId": 1,
+      "description": "Asus TUF Gaming",
+      "imageUrl": "https://images.unsplash.com/photo-1548611635-b6e7827d7d4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+    },
+    {
+      "id": 2,
+      "name": "Mouse",
+      "price": 25,
+      "categoryId": 2,
+      "description": "A4 Tech",
+      "imageUrl": "https://images.unsplash.com/photo-1563297007-0686b7003af7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1091&q=80"
+    },
+    {
+      "id": 3,
+      "name": "Monitör",
+      "price": 1750,
+      "categoryId": 3,
+      "description": "BENQ",
+      "imageUrl": "https://images.unsplash.com/flagged/photo-1551954810-43cd6aef5b1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80"
+    },
+    {
+      "id": 4,
+      "name": "Ekran Kartı",
+      "price": 2200,
+      "categoryId": 4,
+      "description": "NVIDIA GTX 1060",
+      "imageUrl": "https://images.unsplash.com/photo-1591489237701-57358ac6d20d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+    },
+    {
+      "id": 5,
+      "name": "Anakart",
+      "price": 1200,
+      "categoryId": 5,
+      "description": "MSI Gaming B-250",
+      "imageUrl": "https://images.unsplash.com/photo-1522920192563-6df902920a8a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
+    },
+    {
+      "id": 6,
+      "name": "Klavye",
+      "price": 25,
+      "categoryId": 6,
+      "description": "Logitech",
+      "imageUrl": "https://images.unsplash.com/photo-1560762484-813fc97650a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+    },
+    {
+      "id": 7,
+      "name": "Dell Laptop",
+      "price": 3500,
+      "categoryId": 1,
+      "description": "Dell XPS",
+      "imageUrl": "https://images.unsplash.com/photo-1593642532009-6ba71e22f468?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+    },
+    {
+      "id": 8,
+      "name": "MSI Interceptor",
+      "price": 800,
+      "categoryId": 2,
+      "description": "MSI Gaming Mouse",
+      "imageUrl": "https://images.unsplash.com/photo-1567017527057-19a636aa9fca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+    },
+    {
+      "name": "Apple",
+      "categoryId": "1",
+      "description": "MacBook Pro",
+      "imageUrl": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp13touch-silver-select-202005_GEO_TR?wid=892&hei=820&&qlt=80&.v=1587460791905",
+      "price": "3200",
+      "id": 9
+    },
+    {
+      "name": "MSI NVIDIA",
+      "description": "GeForce 1050 TI - GDDR5",
+      "imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/MSI/thumb/v2-84475-5_large.jpg",
+      "price": "950",
+      "categoryId": "4",
+      "id": 10
+    },
+    {
+      "name": "Samsung Monitor",
+      "description": "Samsung LS27R350FHMXUF 27\" 75Hz",
+      "imageUrl": "https://images.samsung.com/is/image/samsung/tr-ur55-lu28r550uqmxuf-frontblack-191938675?$PD_GALLERY_L_JPG$",
+      "price": "800",
+      "categoryId": "3",
+      "id": 11
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Laptop"
+    },
+    {
+      "id": 2,
+      "name": "Mouse"
+    },
+    {
+      "id": 3,
+      "name": "Monitor"
+    },
+    {
+      "id": 4,
+      "name": "Ekran Kartı"
+    },
+    {
+      "id": 5,
+      "name": "Anakart"
+    },
+    {
+      "id": 6,
+      "name": "Klavye"
+    }
+  ]
+}

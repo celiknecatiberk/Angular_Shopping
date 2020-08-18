@@ -1,0 +1,12 @@
+.productbox{
+    padding:15px;
+}
+
+.productshadow{
+    box-shadow: 1px -1px 12px -1px rgba(0,0,0,0.31);
+}
+
+.productSet{
+    width: 18rem;
+    /* margin-left:30px; */
+}

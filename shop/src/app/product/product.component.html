@@ -1,0 +1,28 @@
+<!-- <h3 *ngIf="products; else noProduct" class="mt-3 mb-3">{{title}}</h3> -->
+<app-category></app-category>
+<div class="form-group" style="width:95%;">
+    <input class="form-control" id="productName" placeholder="Ürün ara" [(ngModel)]=filterText>
+    <!-- " [(ngModel)]=filterText " olayı Two-Way Binding-->
+    <small *ngIf="filterText" class="form-text text-muted"><strong>Şu an {{filterText}} aradınız.</strong></small>
+</div>
+
+
+<div class="row">
+    <ng-template #noProduct>
+        <div class="alert alert-danger mt-3 w-50" role="alert">
+            Bu kategoride ürün yoktur.
+        </div>
+    </ng-template>
+
+    <div *ngFor="let product of products | productFilter:filterText" class="card mr-3 mb-4 productbox productshadow productSet" >
+        <img [src]="product.imageUrl" class="card-img-top h-50" alt="image">
+        <div class="card-body">
+            <h5 class="card-title">{{product.name}}</h5>
+            <p class="card-text">{{product.description}}</p>
+            <h6 class="card-text">{{product.price | currency:'USD':'symbol':"1.2-4"}} </h6>
+            <div style="text-align:center;"><a (click)="addToCart(product)" class="btn btn-info mt-2"
+                    style="width:8rem;">Sepete Ekle</a></div>
+        </div>
+    </div>
+
+</div>

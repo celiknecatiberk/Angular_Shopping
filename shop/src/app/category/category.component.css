@@ -1,0 +1,13 @@
+a{
+    text-decoration: none;
+    font-size: 16px;
+    color:rgb(39,43,48);
+   
+}
+a:hover{
+    background-color: rgb(52,58,67);
+    border-radius: 10px;
+    transition: 2s;
+    color:white;
+    
+}

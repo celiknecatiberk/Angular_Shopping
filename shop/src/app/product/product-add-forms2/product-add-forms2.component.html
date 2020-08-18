@@ -1,0 +1,62 @@
+<h3 class="mt-4 mb-4">Yeni Ürün Ekle - Reactive Form</h3>
+<form [formGroup]="productAddForm" (ngSubmit)="add()">
+    <!-- Diğerinden farklı olarak, Componentimizde ki hangi from grubu ile eşleştirdiğimizi burada belirtmemiz gerekiyor.-->
+    <h6>Ürün Adı</h6>
+    <div class="form-group">
+        <input type="text" id="name" name="name" formControlName="name" class="form-control" placeholder="Ürün Adı">
+        <!-- formControlName="name" kısmında ki name .ts dosyasında ki createproductAddForm un içerisinde tanımladığımız value-->
+        <div class="alert alert-danger"
+            *ngIf="productAddForm.get('name').hasError('required') && productAddForm.get('name').dirty">Ürün Adı
+            Zorunludur</div>
+    </div>
+
+    <div class="form-group mt-4">
+        <h6>Açıklama</h6>
+        <input type="text" id="description" name="description" formControlName="description" class="form-control"
+            placeholder="Açıklama">
+        <!-- formControlName="name" kısmında ki name .ts dosyasında ki createproductAddForm un içerisinde tanımladığımız value-->
+        <div class="alert alert-danger"
+            *ngIf="productAddForm.get('description').hasError('required') && productAddForm.get('description').dirty">
+            Ürün Açıklaması
+            Zorunludur</div>
+    </div>
+
+    <div class="form-group mt-4">
+        <h6>Fotoğraf Yolu</h6>
+        <input type="text" id="imageUrl" name="imageUrl" formControlName="imageUrl" class="form-control"
+            placeholder="Fotoğraf Yolu">
+        <!-- formControlName="name" kısmında ki name .ts dosyasında ki createproductAddForm un içerisinde tanımladığımız value-->
+        <div class="alert alert-danger"
+            *ngIf="productAddForm.get('imageUrl').hasError('required') && productAddForm.get('imageUrl').dirty">
+            Fotoğraf Yolu
+            Zorunludur</div>
+    </div>
+
+    <div class="form-group mt-4">
+        <h6>Ürün Fiyatı</h6>
+        <input type="text" id="price" name="price" formControlName="price" class="form-control"
+            placeholder="Ürün Fiyatı">
+        <!-- formControlName="name" kısmında ki name .ts dosyasında ki createproductAddForm un içerisinde tanımladığımız value-->
+        <div class="alert alert-danger"
+            *ngIf="productAddForm.get('price').hasError('required') && productAddForm.get('price').dirty">
+            Ürün Fiyatı
+            Zorunludur</div>
+    </div>
+
+    <div class="form-group mt-4">
+        <h6>Kategoriler</h6>
+        <select class="form-control" formControlName="categoryId"  name="categoryId"
+            id="categoryId" required>
+            <option *ngFor="let category of categories" [value]="category.id">
+                {{category.name}}
+            </option>
+        </select>
+        <div *ngIf="productAddForm.get('categoryId').hasError('required') && productAddForm.get('categoryId').touched" class="alert alert-danger">
+            Kategori Gereklidir.
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="productAddForm.invalid"> Ürün Ekle</button>
+
+
+</form>
